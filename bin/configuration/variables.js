@@ -1,6 +1,7 @@
 const variables = {
     Api: {
-        port: process.env.port || 3000
+        //port: process.env.port || 3000
+        port: 3000
     },
     Databse: {
         conecction: process.env.conecction || 'mongodb+srv://admin:manarin1994@nofood-0xnxi.mongodb.net/test?retryWrites=true'

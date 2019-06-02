@@ -5,7 +5,7 @@ const variables = require('../bin/configuration/variables')
 var cors = require('cors');
 
 //Routers
-const categoriaRouter = require('../routes/categoria-router');
+const historicoRouter = require('../routes/historico-router');
 const produtoRouter = require('../routes/produto-router');
 const usuarioRouter = require('../routes/usuario-router');
 
@@ -20,7 +20,7 @@ app.use(cors());
 mongoose.connect(variables.Databse.conecction, { useNewUrlParser: true });
 
 //Configurando as rotas
-app.use('/api/categoria', categoriaRouter);
+app.use('/api/historico', historicoRouter);
 app.use('/api/produto', produtoRouter);
 app.use('/api/usuario', usuarioRouter);
 

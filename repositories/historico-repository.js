@@ -1,12 +1,12 @@
 'use strict'
 
-require('../models/categoria-model');
+require('../models/historico-model');
 const base = require('../bin/base/repository-base');
 
-class categoriaRepository {
+class historicoRepository {
 
     constructor() {
-        this._base = new base('Categoria');
+        this._base = new base('Historico');
     }
 
     async create (data) {
@@ -30,4 +30,4 @@ class categoriaRepository {
     }
 }
 
-module.exports = categoriaRepository;
+module.exports =historicoRepository;
